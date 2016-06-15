@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <title>check support property with CSS.supports</title>
+    <style>
+      input {
+        font-family: Consolas, Inconsolata, Menlo, Monaco, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <label>
+      CSS.supports(
+        "<input id="js-property" type="text" placeholder="color">",
+        "<input id="js-value" type="text" placeholder="red">"
+      )
+    </label>
+    <input id="js-execute-1" type="button" value="execute">
+    <span id="js-result-1"></span>
+
+    <br>
+
+    <label>
+      CSS.supports(
+        "<input id="js-condition" type="text" placeholder="(color: red)">"
+      )
+    </label>
+    <input id="js-execute-2" type="button" value="execute">
+    <span id="js-result-2"></span>
+
+    <script src="index.js"></script>
+  </body>
+</html>
